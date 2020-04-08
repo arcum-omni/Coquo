@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Coquo.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
@@ -12,5 +13,7 @@ namespace Coquo.Data
             : base(options)
         {
         }
+
+        public DbSet<Ingredient> Ingredients { get; set; }
     }
 }
