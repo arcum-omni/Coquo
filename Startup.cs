@@ -30,7 +30,9 @@ namespace Coquo
             services.AddDbContext<KitchenContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("KitchenDBConnection")));
 
-            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+            // below was: services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<KitchenContext>();
+            services.AddDefaultIdentity<IdentityUser>(IdentityHelper.SetIdentityConfigOptions)
+                .AddRoles <IdentityRole>()
                 .AddEntityFrameworkStores<KitchenContext>();
 
             services.AddControllersWithViews();
@@ -67,6 +69,10 @@ namespace Coquo
                     pattern: "{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
             });
+
+            // Create custom roles
+            var serviceProvider = app.ApplicationServices.GetRequiredService<IServiceProvider>().CreateScope();
+            IdentityHelper.CreateRoles(serviceProvider.ServiceProvider, IdentityHelper.Admin, IdentityHelper.User).Wait();
         }
     }
 }
