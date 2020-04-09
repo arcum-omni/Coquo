@@ -15,5 +15,7 @@ namespace Coquo.Data
         }
 
         public DbSet<Ingredient> Ingredients { get; set; }
+
+        public DbSet<Dish> Dishes { get; set; }
     }
 }
