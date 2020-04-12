@@ -20,6 +20,8 @@ namespace Coquo.Models
 
         public double ItemQuantity { get; set; }
 
+        public string ItemUnitOfMeasure { get; set; }
+
         public DateTime DateReceived { get; set; }
 
         public DateTime? ExpirationDate { get; set; }
