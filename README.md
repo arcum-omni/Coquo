@@ -1,9 +1,17 @@
 ![.NET Core](https://github.com/arcum-omni/Coquo/workflows/.NET%20Core/badge.svg)
 
 # Coquó
-Home Culinary Application to Manage Your Kitchen
+Home Culinary Application to Manage Your Kitchen.
 
-Coquó is a home culinary app to manage your kitchen to efficiently keep your pantry stocked, with the freshest possible food, to feed you & your household. The goal of Coquó is to reduce stress and allow you to spend less time preparing meals, and more time feasting with friends and family...
+Coquó is a home culinary web application, with a mobile app to follow, to manage your kitchen to efficiently keep your pantry stocked, with the freshest possible food, to feed you & your household. The goal of Coquó is to reduce stress and allow you to spend less time shopping & preparing meals, and more time feasting with friends and family...
+
+## Desired Application Features
+* Create a Pantry Inventory of Ingredients
+* Save Dish Recipes
+* Create a Meal Planner
+* Generate Shopping Lists
+* Track Macro Nutrients
+* Cooking Timer(s)
 
 ## Getting Started
 - Must have [Visual Studio 2019+](https://visualstudio.microsoft.com/) 
