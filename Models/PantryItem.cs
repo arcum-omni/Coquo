@@ -12,7 +12,7 @@ namespace Coquo.Models
         public int ItemID { get; set; }
 
         [Required]
-        public Ingredient ItemName { get; set; }
+        public Ingredient Item { get; set; }
         
         public string ItemDescription { get; set; }
 
