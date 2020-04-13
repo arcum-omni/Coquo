@@ -3,6 +3,8 @@
 # Coquó
 Home Culinary Application to Manage Your Kitchen.
 
+![screenShot](https://user-images.githubusercontent.com/42657915/79085573-f653c580-7ced-11ea-87f3-26131eb19966.jpg)
+
 Coquó is a home culinary web application, with a mobile app to follow, to manage your kitchen to efficiently keep your pantry stocked, with the freshest possible food, to feed you & your household. The goal of Coquó is to reduce stress and allow you to spend less time shopping & preparing meals, and more time feasting with friends and family...
 
 ## Desired Application Features
